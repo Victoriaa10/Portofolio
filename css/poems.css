@@ -1,0 +1,365 @@
+:root {
+  --body-bg: #6f4637;
+  --page-bg: #281b16;
+  --dark-text: #ffffff;
+  --book-title: 'Architects Daughter', cursive;
+  --title: 'Amiri', serif;
+  --body: 'Amiri', serif;
+}
+
+body {
+  background-color: var(--body-bg);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background-color {
+  position: relative;
+}
+
+.background-color .background {
+  position: absolute;
+  opacity: 0.5;
+  background-image: url(imagini/wood2.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.attribution {
+  position: relative;
+  margin-top: 60vw;
+}
+
+@media (min-width: 760px) {
+  .bookWrapper {
+    margin-top: 10%;
+    width: 72vw;
+    height: 42vw;
+    z-index: 1000;
+  }
+  .bookBg {
+    position: relative;
+    background-color: #3a2c21;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+  }
+  .pageBg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: var(--page-bg);
+    width: 70vw;
+    height: 40vw;
+    border-radius: 1px;
+    cursor: pointer;
+  }
+  /*.spineCenter {
+		width:46px; 
+		height: 42vw;
+		border-radius: 0px;
+		background:rgba(7, 7, 7, 0.4);
+	  }*/
+  .cover-photo {
+    position: absolute;
+    width: 50%;
+    height: 40vw;
+  }
+  .cover-photo .img-fluid {
+    width: 100%;
+    height: 100%;
+    border-right: solid 2px black;
+  }
+  .pageWrapper {
+    position: absolute;
+    background-color: var(--page-bg);
+    left: 51.5%;
+    width: 50%;
+    height: 40vw;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+  .page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: rgba(250, 223, 198, 0.882);
+    font-family: var(--title);
+    letter-spacing: 0.05vw;
+  }
+  .page .pageFace {
+    position: absolute;
+    width: 100%;
+    height: 40vw;
+    overflow: hidden;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1vw;
+  }
+  .page .contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .page .contents .page-title {
+    margin: 10% auto;
+  }
+  .page .contents .content-table {
+    margin-top: 5%;
+    margin-left: 5%;
+    text-transform: uppercase;
+  }
+  .page .book-title {
+    font-family: var(--book-title);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--dark-text);
+  }
+  .page .page-author {
+    font-family: var(--title);
+    font-size: 1.2em;
+    border-top: 1px solid var(--dark-text);
+    border-bottom: 1px solid var(--dark-text);
+    display: inline-block;
+    padding: 1.5%;
+    margin-top: 4%;
+  }
+  .page .page-title {
+    color: rgba(255, 255, 255, 0.876);
+    font-weight: 700;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    font-size: 1.1vw;
+  }
+  .page .end-text {
+    margin-top: 0 !important;
+  }
+  .front, .back {
+    background-color: var(--page-bg);
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    background-color: #441a2b;
+  }
+  .bookWrapper {
+    position: relative;
+    width: 94%;
+    height: auto;
+    margin-top: 24.5%;
+    background-color: rgba(0, 0, 0, 0.657);
+  }
+  .pageBg {
+    width: 100%;
+    -webkit-transform: translate(0) !important;
+            transform: translate(0) !important;
+  }
+  .book-title {
+    color: white;
+    font-family: var(--book-title);
+    font-size: 9vw;
+    letter-spacing: 1vw;
+  }
+  .page-author {
+    width: 70%;
+    padding: 1%;
+    padding-bottom: 6%;
+    margin: 0 auto;
+    font-size: 5vw;
+    border-bottom: 1px solid #fafafa;
+    font-family: var(--title);
+  }
+  .page-title {
+    color: white;
+    font-size: 6vw;
+    width: 76%;
+    margin: 4% auto;
+  }
+  .pageWrapper {
+    text-align: center;
+    font-size: 3vw;
+    color: rgba(241, 224, 250, 0.89);
+    font-family: var(--title);
+    letter-spacing: 0.05vw;
+  }
+  .pageWrapper #page1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 96%;
+    margin-bottom: 3%;
+    margin-top: -8%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .pageWrapper #page2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 96%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .pageWrapper #page3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 96%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .pageWrapper #page4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 96%;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .pageWrapper #page5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 96%;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .pageWrapper #page6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 96%;
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .pageWrapper #page7 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 96%;
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  .pageWrapper #page8 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 96%;
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  .pageWrapper #page9 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 96%;
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+  .pageWrapper #page10 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 96%;
+    margin-top: -30%;
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+  .pageWrapper .pageFace {
+    padding-top: 20%;
+  }
+  .back, .front {
+    visibility: visible !important;
+  }
+  .back {
+    -webkit-transform: rotateY(0) !important;
+            transform: rotateY(0) !important;
+  }
+  .attribution {
+    margin-top: 6vmin;
+    font-size: 2vw !important;
+  }
+}
+/*# sourceMappingURL=poems.css.map */

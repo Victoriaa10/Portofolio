@@ -1,0 +1,398 @@
+@mixin nav-titles {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.1vw;
+}
+@mixin title {
+    font-family: 'Amiri', serif;
+}
+@mixin poem {
+    font-family: 'Amiri', serif;
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+
+@media (min-width: 760px) {
+    .navbar {
+        a.navbar-brand {
+           .logo {
+               height: auto;
+               width: 6vw;
+               margin-left: 5%;
+               transform: rotate(5deg);
+               height: 7vw;
+               width: auto;
+               z-index: 120;
+           }
+        }
+        ul.navbar-nav {
+            display: flex;
+            padding-left: 6%;
+            flex-direction: row;
+            align-items: center;
+            margin-top: -3%;
+            @include nav-titles;
+        }
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-left: 4vmax;
+        color:rgb(255, 255, 255);
+    }
+    .navbar-expand-md .navbar-nav .nav-link:hover {
+        color: rgb(236, 209, 189);
+    }
+    .navbar-dark .navbar-nav .active>.nav-link {
+        color: rgba(255, 255, 255, 0.993);
+    }
+    .principal-img {
+        position: relative;
+        margin-top: -2%;
+        .img-fluid {
+            opacity: 0.8;
+        }
+        
+        @keyframes border-gray {
+            20%   {background-color:rgba(55, 46, 37, 0.278);}
+            40%   {background-color:rgba(0, 0, 0, 0.555);}
+            60%   {background-color: rgba(55, 46, 37, 0.277);}
+            80%   {background-color:rgba(0, 0, 0, 0.555);}
+            100%   {background-color: rgba(55, 46, 37, 0.277);}
+             
+        }
+          
+        .passion-content:hover {
+            opacity: 0.8;
+            .border-gray {
+                color: rgb(250, 140, 100);
+                border: solid rgb(250, 140, 100) 1px;
+                animation-name: border-gray;
+                animation-duration: 5s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+            .secundar-text {
+                width: 50%;
+                margin: 0 auto;
+                color: rgb(14, 13, 13);
+                border-radius: 3px;
+            }
+        }
+        .passion-content {
+            position: absolute;
+            right: 0;
+            left: 0;
+            margin: auto;
+            border-radius: 3px;
+            top: 30%;
+            width: 70%;
+            height: 24vw;
+            background-color: rgb(0, 0, 0);
+            opacity: 0.7;
+            .border-gray {
+                color: rgb(240, 172, 147);
+                border: solid rgb(240, 172, 147) 1px;
+                border-radius: 3px;
+                width: 90%;
+                height: 18vw;
+                margin: 0 auto;
+                margin-top: 3vw;
+                .principal-text {
+                    margin-top: 4vw;
+                    @include title;
+                    font-size: 4vw;
+                }
+                .secundar-text {
+                    color: rgb(205, 154, 174);
+                    margin-top: 2vw;
+                    @include title;
+                    font-size: 1.6vw;
+                }
+            }
+        }
+       
+    }
+    .container-fluid {
+        .sneak-border {
+            margin-top: 3%;
+            border: solid rgba(15, 15, 15, 0.437) 2px;
+            border-radius: 6px;
+            width: 36%;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.215);
+            .sneak-title {
+                margin: 0 auto;
+                margin-top: 3%;
+                text-align: center;
+                letter-spacing: 1.5vw;
+                color: white;
+                font-family: 'Architects Daughter', cursive;
+                font-size: 2vw;
+            }
+            .sneak-text {
+                text-align: center;
+                margin-bottom: 3%;
+                color: rgb(252, 192, 149);
+                font-size: 1.2vw;
+                letter-spacing: 0.2vw;
+                font-family: 'Architects Daughter', cursive;
+            }
+        }
+        .illustration {
+            max-height: 38vw;
+            width: auto;
+        }
+        .poem-title {
+            margin-bottom: 4%;
+            margin-left: -16%;
+        }
+        .poem {
+            color: rgba(255, 255, 255, 0.979);
+            font-size: 1.1vw;
+            letter-spacing: 0.08vw;
+        }
+        .proza {
+            white-space: break-spaces;
+            .proza-title {
+                margin-left: 0;
+            }
+            .proza-text {
+                text-indent: -5%;
+                margin: -6vw 6vw;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .logo {
+        position: absolute;
+        top: 18%;
+        height: auto;
+        width: 33%;
+        transform: rotate(10deg);
+        z-index: 1000;
+    }
+    .navbar {
+        background-image: url(imagini/nebula-2253941_1280.jpg);
+        width: 100%;
+        height: 22vw;
+        .button {
+            margin-right: 7%;
+        }
+        .icons-media {
+            margin: 0 auto;
+            margin-top: 18%;
+            margin-bottom: 2%;
+            position: relative;
+            a {
+                padding-right: 6vw;
+                padding-left: 6vw;
+            }
+        }
+    }
+    .navbar-dark .navbar-nav {
+        background-image: url(imagini/nebula-2253941_1280.jpg);
+        height: auto;
+        width: 100% !important;
+        margin-top: 20%;
+        .nav-link {
+            margin-top: 8%;
+            color: rgb(253, 253, 253);
+            display: flex;
+            justify-content: center;
+            letter-spacing: 0.4vw;
+        }
+    }
+    .navbar-dark .navbar-toggler {
+        position: absolute;
+        visibility: hidden;
+        right: 3%;
+       
+        .navbar-toggler-icon {
+            visibility:visible;
+            width: 1.5em;
+            height: 1.5em;
+         }
+    }
+    .principal-img {
+        position: relative;
+        .mobile-pic {
+            filter: blur(3px);
+            -webkit-filter: blur(3px);
+        }
+        .passion-content {
+            position: absolute;
+            top: 27vw;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 80%;
+            height: auto;
+            background-color: #000000b6;
+            color: rgb(255, 255, 255);
+            border: solid rgb(240, 172, 147) 1px;
+            border-radius: 3px;
+            z-index: 1002;
+            .border-gray {
+                margin-top: 10%;
+                text-align: center;
+                .principal-text {
+                    letter-spacing: 1.2vw;
+                    width: 70%;
+                    margin: 0 auto;
+                    @include title;
+                    font-size: 8vw;
+                    line-height: 18vw;
+                }
+                .secundar-text {
+                    width: 86%;
+                    color: rgb(240, 172, 147);
+                    margin-bottom: 10%;
+                    @include title;
+                    letter-spacing: 0.5vw;
+                    font-size: 5vw;
+                }
+            }
+        }
+    }
+    .container-fluid {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        background-color: #91365c87 !important;
+        .sneak-border {
+            margin-top: 3%;
+            border: solid rgba(15, 15, 15, 0.437) 2px;
+            border-radius: 6px;
+            width: 60% !important;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.215);
+            .sneak-title {
+                text-align: center;
+                margin-top: 3%;
+                margin-bottom: 0;
+                letter-spacing: 1.5vw;
+                color: white;
+                font-family: 'Architects Daughter', cursive;
+                font-size: 4vw;
+            }
+            .sneak-text {
+                text-align: center;
+                margin-bottom: -2%;
+                margin-bottom: 3%;
+                color: rgb(252, 192, 149);
+                font-size: 3vw;
+                letter-spacing: 0.2vw;
+                font-family: 'Architects Daughter', cursive;
+            }
+        }
+        .illustration {
+            height: 90vw;
+            width: auto
+        }
+        .poem-title {
+            font-size: 5vw;
+            margin-bottom: 4%;
+            margin-left: -14%;
+            margin-top: 5%;
+        }
+        .poem {
+            color: rgba(255, 255, 255, 0.979);
+            font-size: 3vw;
+            letter-spacing: 0.1vw;
+        }
+        .proza {
+            white-space: break-spaces;
+            .proza-title {
+                margin-top: -6%;
+                margin-left: 0;
+            }
+            .proza-text {
+                text-align: justify;
+                margin-top: -17%;
+                text-indent: -5%;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .attribution {
+        font-size: 1.3vw !important;
+    }
+}
+
+
+.icons-media {
+    position: relative;
+    margin-left: 10vw;
+    a {
+        text-decoration: none;
+    }
+    .fa {
+        padding-left: 2.4vw;
+        color: white;
+    }
+    .fa:hover {
+        color: rgb(149, 253, 192);
+    }
+}
+
+.container-fluid {
+    position: absolute;
+    height: auto;
+    background-color: #6f4637;
+    padding: 0;
+    .rain-drops {
+        background-image: url(imagini/wood2.jpg);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.3;
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .wine-table {
+        margin-top: 8%;
+        width: 100%;
+    }
+    .capo {
+        margin-top: 10%;
+        margin: 0 auto;
+    }
+    .unghiuri {
+        padding-left: 11%;
+    }
+    .content {
+        position: relative;
+        margin-top: 6%;
+        color: white;
+        @include poem;
+    } 
+}
+.attribution {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+    margin-bottom: 0.3vw;
+    color: white;
+    font-size: 1vw;
+    .name {
+        text-decoration: none;
+        color:rgb(238, 186, 150);
+    }
+}
+
+
+  nav.efix {
+    background: rgba(59, 36, 31, 0.972);
+    height: 6vw;
+  }
+  .logo.efix {
+      margin-top: 3.5vw;
+  }
+  .navbar-nav.efix {
+      margin-top: 0 !important;
+  }

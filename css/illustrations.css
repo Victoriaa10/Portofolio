@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+}
+
+.background-color {
+  position: relative;
+  background-color: #6f4637;
+  min-height: 100%;
+}
+
+.background-color .background {
+  position: absolute;
+  opacity: 0.5;
+  background-image: url(imagini/wood2.jpg);
+  width: 100%;
+  min-height: 100%;
+}
+
+.attribution {
+  position: relative;
+  margin-top: 12vw;
+}
+
+@media (min-width: 768px) {
+  .title {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 16%;
+    font-family: 'Architects Daughter', cursive;
+    text-shadow: 3px 3px black;
+    font-size: 2vw;
+    letter-spacing: 0.6vw;
+  }
+  .title .first-ill {
+    position: absolute;
+    display: inline-block;
+    left: 13%;
+    top: 26%;
+  }
+  .title .first-ill .divas {
+    width: 38vw;
+    max-height: auto;
+  }
+  .title .feathers {
+    position: absolute;
+    right: 6%;
+    top: 85%;
+    width: 60vw;
+  }
+  .title .feathers .feather {
+    width: 24vw;
+    height: auto;
+    margin-right: 4%;
+    margin-left: 4%;
+    display: inline-block;
+  }
+  .title .feathers .page-author {
+    margin: 2% auto;
+    font-family: 'Amiri', serif;
+    font-size: 1.5vw;
+    border-top: 1px solid rgba(255, 255, 255, 0.582);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.582);
+    width: 26%;
+    color: #fadfc6;
+    letter-spacing: 0.1vw;
+    padding: 0.2vw;
+  }
+  .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ills-content {
+    margin-top: 30vw;
+  }
+  .ills-content .illustration {
+    position: relative;
+    margin-top: 35vw;
+    text-align: center;
+  }
+  .ills-content .illustration .img {
+    max-height: auto;
+    max-width: 95%;
+  }
+  .ills-content .illustration .mee, .ills-content .illustration .banita {
+    width: 34vw;
+  }
+  .ills-content .illustration .forest, .ills-content .illustration .coffee {
+    width: 25vw;
+  }
+  .ills-content .illustration .small {
+    width: 18vw;
+  }
+  .ills-content .illustration .butterfly {
+    width: 66vw;
+    margin-top: 25%;
+  }
+  .ills-content .illustration .bigger {
+    width: 45vw;
+    margin-top: -60%;
+  }
+  .ills-content .illustration .right-down {
+    margin-top: -35vw;
+  }
+  .ills-content .illustration .upper {
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 760px) {
+  .background-color {
+    background-color: #441a2b;
+  }
+  .nacu, .coffee {
+    margin-top: 40vw !important;
+  }
+  .human {
+    margin-top: 55vw !important;
+  }
+  .calin {
+    margin-top: 50vw !important;
+  }
+  .dani {
+    margin-top: -8vw !important;
+  }
+  .padure, .fluturi, .bossy {
+    margin-top: 0 !important;
+  }
+  .illustration {
+    margin: 20vw auto;
+  }
+  .illustration img {
+    height: auto;
+    max-width: 100%;
+  }
+  .illustration .forest {
+    width: 65vw;
+  }
+  .illustration .small {
+    width: 55vw;
+  }
+  .illustration .coffee {
+    width: 70vw;
+  }
+  .illustration .bigger, .illustration .butterfly {
+    width: 90vw;
+  }
+  .title {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 16%;
+    font-family: 'Architects Daughter', cursive;
+    text-shadow: 3px 3px black;
+    letter-spacing: 1vw;
+    margin-top: 20%;
+  }
+  .title .feathers .page-author {
+    margin: 2% auto;
+    font-family: 'Amiri', serif;
+    font-size: 5vw;
+    border-top: 1px solid rgba(255, 255, 255, 0.582);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.582);
+    width: 48%;
+    color: #fadfc6;
+    letter-spacing: 0.1vw;
+    padding: 0.9vw;
+  }
+}
+/*# sourceMappingURL=illustrations.css.map */
