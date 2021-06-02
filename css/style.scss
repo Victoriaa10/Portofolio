@@ -3,10 +3,10 @@
     font-size: 1.1vw;
 }
 @mixin title {
-    font-family: 'Amiri', serif;
+    font-family: 'Lato', sans-serif;
 }
 @mixin poem {
-    font-family: 'Amiri', serif;
+    font-family: 'Lato', sans-serif;
 }
 body {
     background-color: rgb(0, 0, 0);
@@ -99,13 +99,14 @@ body {
                 margin-top: 3vw;
                 .principal-text {
                     margin-top: 4vw;
-                    @include title;
+                    font-family: 'Gochi Hand', cursive;
                     font-size: 4vw;
+                    letter-spacing: 0.5vw;
                 }
                 .secundar-text {
                     color: rgb(205, 154, 174);
                     margin-top: 2vw;
-                    @include title;
+                    font-family: 'Lato', sans-serif;
                     font-size: 1.6vw;
                 }
             }
@@ -115,11 +116,11 @@ body {
     .container-fluid {
         .sneak-border {
             margin-top: 3%;
-            border: solid rgba(15, 15, 15, 0.437) 2px;
+            border: solid rgb(2, 2, 2) 2px;
             border-radius: 6px;
             width: 36%;
             height: auto;
-            background-color: rgba(0, 0, 0, 0.215);
+            background-color: rgba(0, 0, 0, 0.361);
             .sneak-title {
                 margin: 0 auto;
                 margin-top: 3%;
@@ -149,17 +150,20 @@ body {
         .poem {
             color: rgba(255, 255, 255, 0.979);
             font-size: 1.1vw;
-            letter-spacing: 0.08vw;
+            letter-spacing: 0.1vw;
+            line-height: 1.9vw;
         }
         .proza {
             white-space: break-spaces;
             .proza-title {
                 margin-left: 0;
+                text-align: center;
+                
             }
             .proza-text {
-                text-indent: -5%;
                 margin: -6vw 6vw;
                 margin-bottom: 0;
+                text-align: justify;
             }
         }
     }
@@ -260,14 +264,14 @@ body {
         position: relative;
         margin: 0;
         padding: 0;
-        background-color: #91365c87 !important;
+        background-color: #49263557 !important;
         .sneak-border {
             margin-top: 3%;
-            border: solid rgba(15, 15, 15, 0.437) 2px;
+            border: solid rgb(255, 188, 161) 1px;
             border-radius: 6px;
             width: 60% !important;
             height: auto;
-            background-color: rgba(0, 0, 0, 0.215);
+            background-color: rgba(0, 0, 0, 0.347);
             .sneak-title {
                 text-align: center;
                 margin-top: 3%;
@@ -333,7 +337,7 @@ body {
         color: white;
     }
     .fa:hover {
-        color: rgb(149, 253, 192);
+        color: rgb(230, 149, 253);
     }
 }
 

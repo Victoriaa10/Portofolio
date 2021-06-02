@@ -4,7 +4,7 @@
 	--dark-text: #ffffff;
 	--book-title: 'Architects Daughter', cursive;
     --title: 'Amiri', serif;
-    --body: 'Amiri', serif;
+    --body:'Lato', sans-serif;
 }
 
 body {
@@ -26,9 +26,14 @@ body {
   }
 .attribution {
 	position: relative;
-	margin-top: 60vw;
+	margin-top: 148vw;
 }
 @media (min-width: 760px) {
+	.background-color {
+		.background {
+			height: 150vw !important;
+		}
+	}
 	.bookWrapper {
 		margin-top: 10%;
 		width: 72vw;
@@ -52,12 +57,12 @@ body {
 		border-radius: 1px;
 		cursor: pointer;
 	  }
-	  /*.spineCenter {
+	  .spineCenter {
 		width:46px; 
 		height: 42vw;
 		border-radius: 0px;
 		background:rgba(7, 7, 7, 0.4);
-	  }*/
+	  }
 	  .cover-photo {
 		  position: absolute;
 		  width: 50%;
@@ -71,7 +76,7 @@ body {
 	  .pageWrapper {
 		position: absolute;
 		background-color: var(--page-bg);
-		left: 51.5%;
+		left: 50%;
 		width: 50%;
 		height: 40vw;
 		-webkit-font-smoothing: subpixel-antialiased;
@@ -143,14 +148,16 @@ body {
 }
 @media (max-width: 760px) {
 	body {
-		background-color: #441a2b;
+		background-color: #31131f;
 	}
 	.bookWrapper {
 		position: relative;
 		width: 94%;
 		height: auto;
 		margin-top: 24.5%;
-		background-color: rgba(0, 0, 0, 0.657);
+		.bookBg {
+			background-color: rgba(0, 0, 0, 0.597);
+		}
 	}
 	.pageBg {
 		width: 100%;
@@ -159,8 +166,8 @@ body {
 	.book-title {
 		color: white;
 		font-family: var(--book-title);
-		font-size: 9vw;
 		letter-spacing: 1vw;
+		text-shadow: 3px 3px black;
 	}
 	.page-author {
 		width: 70%;
@@ -168,8 +175,10 @@ body {
 		padding-bottom: 6%;
 		margin: 0 auto;
 		font-size: 5vw;
-		border-bottom: 1px solid rgb(250, 250, 250);
+		color: rgb(248, 203, 170);
+		border-bottom: 1px solid rgb(248, 203, 170);
 		font-family: var(--title);
+		text-shadow: 3px 3px black;
 	}
 	.page-title {
 		color: white;
@@ -180,7 +189,7 @@ body {
 	.pageWrapper {
 		text-align: center;
 		font-size: 3vw;
-		color: rgba(241, 224, 250, 0.89);
+		color: rgb(236, 204, 253);
 		font-family: var(--title);
 		letter-spacing: 0.05vw;
 		#page1 {
